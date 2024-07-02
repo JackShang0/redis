@@ -1,0 +1,38 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: redis
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring-security?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+mybatis-plus:
+  type-aliases-package: com.redis.bo
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+
+
+
+redis:
+  password:
+  cluster:
+    #nodes: 10.120.52.38:6300,10.120.52.39:6301,10.120.52.39:6300,10.120.52.40:6301,10.120.52.40:6300,10.120.52.38:6301
+    nodes: 127.0.0.1:6379
+    max-redirects: 5
+  timeout: 60000
+  pool:
+    max-idle: 15
+    max-wait: 60000
+    max-active: 15
+
+
