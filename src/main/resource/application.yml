@@ -13,6 +13,13 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    sentinel:
+      master: mymaster
+      nodes:
+        - 127.0.0.1:27001
+        - 127.0.0.1:27002
+        - 127.0.0.1:27003
 
 
 mybatis-plus:
