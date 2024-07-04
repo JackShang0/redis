@@ -48,16 +48,16 @@ mybatis-plus:
 
 
 
-redis:
-  password:
-  cluster:
-    #nodes: 10.120.52.38:6300,10.120.52.39:6301,10.120.52.39:6300,10.120.52.40:6301,10.120.52.40:6300,10.120.52.38:6301
-    nodes: 127.0.0.1:6379
-    max-redirects: 5
-  timeout: 60000
-  pool:
-    max-idle: 15
-    max-wait: 60000
-    max-active: 15
+#redis:
+#  password:
+#  cluster:
+#    #nodes: 10.120.52.38:6300,10.120.52.39:6301,10.120.52.39:6300,10.120.52.40:6301,10.120.52.40:6300,10.120.52.38:6301
+#    nodes: 127.0.0.1:6379
+#    max-redirects: 5
+#  timeout: 60000
+#  pool:
+#    max-idle: 15
+#    max-wait: 60000
+#    max-active: 15
 
 
