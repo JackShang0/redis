@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @description:
+ * @description: 配置sentinel/redis集群分片情况下的读写分离：主节点负责写入，从节点负责读取
  * @author: shangqj
  * @date: 2024/7/2
  * @version: 1.0
