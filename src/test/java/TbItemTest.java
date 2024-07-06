@@ -18,7 +18,7 @@ public class TbItemTest {
     TbItemMapper tbItemMapper;
 
     @Test
-    void selectTbItem(){
+    public void selectTbItem(){
         //通过条件构造器查询一个list集合，若没有条件，则可以设置null为参数
         List<TbItem> users = tbItemMapper.selectList(null);
         users.forEach(System.out::println);

@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: redis
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
   mvc:
     throw-exception-if-no-handler-found: true
   resources:
@@ -38,6 +43,16 @@ spring:
     #    - 127.0.0.1:26380
     #    - 127.0.0.1:26381
 
+# 可选：设置日志级别，打印更多详细信息
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: INFO
+        type:
+          descriptor:
+            sql:
+              BasicBinder: INFO
 
 
 mybatis-plus:
